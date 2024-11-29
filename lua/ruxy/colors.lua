@@ -7,19 +7,6 @@ local noice = require 'noice'
 local tokyonight = require 'tokyonight'
 
 local function init()
-    onedark.setup({
-        -- integrations = {
-        --     --indent_blankline = { enabled = true },
-        --     native_lsp = {
-        --         enabled = true,
-        --     },
-        --     telescope = true,
-        --     treesitter = true,
-        -- },
-        options = {
-            transparency = true
-        },
-    })
 
 
     lualine.setup {
@@ -27,15 +14,15 @@ local function init()
             component_separators = { left = '', right = '' },
             icons_enabled = false,
             section_separators = { left = '', right = '' },
-            theme = "onedark"
+            theme = "gruvbox"
         }
     }
 
-    vim.cmd.colorscheme "onedark"
+    vim.cmd.colorscheme "gruvbox"
 end
 
 function ColorMyPencils(color)
-	color = color or "onedark"
+	color = color or "gruvbox"
 	vim.cmd.colorscheme(color)
 
 	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })

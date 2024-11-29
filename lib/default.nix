@@ -37,6 +37,7 @@ in rec {
   in [
     pkgs.curl 
     vimPlugins.onedarkpro-nvim
+    vimPlugins.gruvbox
     vimPlugins.harpoon
     # languages
     vimPlugins.nvim-lspconfig
